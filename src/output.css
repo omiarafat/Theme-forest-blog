@@ -712,6 +712,10 @@ video {
   width: 2.5rem;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -884,21 +888,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-green-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\/img\/hero-pattern\.svg\'\)\] {
-  background-image: url('/img/hero-pattern.svg');
-}
-
-.bg-\[url\(\)\] {
-  background-image: url();
-}
-
-.bg-\[url\(\.\.\/imgs\/Footer_bg\.png\)\] {
-  background-image: url(../imgs/Footer_bg.png);
+.bg-\[url\(asset\/img\/Footer_bg\.png\)\] {
+  background-image: url(asset/img/Footer_bg.png);
 }
 
 .bg-cover {
@@ -1013,12 +1004,12 @@ video {
   text-align: end;
 }
 
-.font-Open_sans {
-  font-family: "Open Sans", sans-serif;
+.font-montserrat {
+  font-family: Montserrat, sans-serif;
 }
 
-.font-montserrat {
-  font-family: "Montserrat", sans-serif;
+.font-open {
+  font-family: Open Sans, sans-serif;
 }
 
 .text-2xl {
@@ -1137,10 +1128,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\] {
-  color: ;
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -1243,10 +1230,6 @@ video {
     display: flex;
   }
 
-  .sm\:w-2\/3 {
-    width: 66.666667%;
-  }
-
   .sm\:w-3\/4 {
     width: 75%;
   }
@@ -1306,25 +1289,12 @@ video {
     display: flex;
   }
 
-  .md\:w-11\/12 {
-    width: 91.666667%;
-  }
-
   .md\:w-\[70\%\] {
     width: 70%;
   }
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:p-0 {
-    padding: 0px;
-  }
-
-  .md\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
   }
 }
 
@@ -1363,12 +1333,12 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:w-\[58\%\] {
-    width: 58%;
+  .xl\:w-4\/5 {
+    width: 80%;
   }
 
-  .xl\:w-\[85\%\] {
-    width: 85%;
+  .xl\:w-\[58\%\] {
+    width: 58%;
   }
 
   .xl\:w-full {
@@ -1388,8 +1358,10 @@ video {
   .\32xl\:w-\[56\.25\%\] {
     width: 56.25%;
   }
+}
 
-  .\32xl\:w-\[68\.75\%\] {
-    width: 68.75%;
+@media (min-width: 1800px) {
+  .\33xl\:w-\[68\.5\%\] {
+    width: 68.5%;
   }
 }
